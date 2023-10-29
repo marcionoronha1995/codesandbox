@@ -3,12 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favs.png"> 
     <title>Aula 1</title>
 </head>
 <body>
     <h1>Variáveis e estruturas condicionais</h1>
+    <h2>Os nomes das variáveis</h2>
+    <p title="Regras">Regras</p>
+    <ul>
+        <li>letras, dígitos ou símbolos <b>$</b> e <b>_</b></li>
+        <li>o <b>primeiro</b> carctere não pode ser um <b>dígito</b></li>
+        <li><b>não</b> pode ser uma palavra reservada</li>
+    </ul>
+    <p>Tipos de <b>dados</b></p>
+    <ul>
+        <li>String</li>
+        <li>Number</li>
+        <li>Boolean</li>
+        <li>Object</li>
+        <li>Null</li>
+        <li>Undefined</li>
+    </ul>
+
+
     <script>
         console.log("olá turma!!!!");
+        console.log("variáveis, ");
+        var primeiraVariavel = 'Aqui tem "   " ';
+        console.log(primeiraVariavel);
+        primeiraVariavel = 'Texto novo "novo mesmo"';
+        console.log(primeiraVariavel);
+        console.log("a variável " + primeiraVariavel + " tem " + primeiraVariavel.length + " caracteres.")
+        primeiraVariavel = "este é outro texto, bora ver";
+        console.log(primeiraVariavel);
+        console.log("a variável " + primeiraVariavel + " tem " + primeiraVariavel.length + " caracteres.")
+        let text = "We are the so-called \"Vikings\" from the north.";
+        console.log(text);
 
 
 
