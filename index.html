@@ -24,6 +24,30 @@
         <li>Null</li>
         <li>Undefined</li>
     </ul>
+    <p>Tipos de <b>variáveis</b></p>
+    <ul>
+        <li><b>VAR</b></li>
+        <ul>
+            <li>Valor inicial <B>PODE</B> ser alterado</li>
+            <li><b>É possível</b> criar outra váriavel com o mesmo nome</li>
+        </ul>
+    </ul>
+    <ul>
+        <li><b>LET</b></li>
+        <ul>
+            <li>Valor inicial <B>PODE</B> ser alterado</li>
+            <li><b>Não É possível</b> criar outra váriavel com o mesmo nome</li>
+        </ul>
+    </ul>
+    <ul>
+        <li><b>CONST</b></li>
+        <ul>
+            <li>Valor inicial <B>NÃO PODE</B> ser alterado</li>
+            <li>Um nome de variável único</li>
+            <li>É obrigatório inicializar o valor da variável</li>
+
+        </ul>
+    </ul>
 
 
     <script>
@@ -37,8 +61,15 @@
         primeiraVariavel = "este é outro texto, bora ver";
         console.log(primeiraVariavel);
         console.log("a variável " + primeiraVariavel + " tem " + primeiraVariavel.length + " caracteres.")
-        let text = "We are the so-called \"Vikings\" from the north.";
+        let text = " \f We are the so-called \"Vikings\" \f from the north.";
         console.log(text);
+        text = " \b We are the so-called \"Vikings\" \f from the north.";
+        console.log(text);
+        text = " linha \n We are the so-called \"Vikings\" \f from the north.";
+        console.log(text);
+        var primeiraVariavel = 'Aqui tem novos "   " ';
+        console.log(primeiraVariavel)
+
 
 
 
