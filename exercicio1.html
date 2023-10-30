@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1 - Semana 1, trilhaDEV</title>
+
+    <link rel="stylesheet" href="css/style.css" class="src">
+</head>
+<body>
+    <p>Quer voltar a página! <a href="index.html">Clique aqui para voltar para a página inicial</a></p>
+
+
+    <h1>Coleta de dados</h1>
+    <h1>Marcio Noronha 1995</h1>
+    <h2>Software Developer Full Stack</h2>
+    <ul>
+        <li>Contato:</li>
+        <li>Data de nascimento: 06/03/1969</li>
+        <li>e-mail: <a href="mailto:marcionoronha1995@gmail.com">marcionoronha1995@gmail.com</a></li>
+    </ul>
+    <form id="meuFormulario">
+        <input type="text" id="campoTexto" name="meuCampo" placeholder="Digite algo">
+        <button type="submit">Enviar</button>
+    </form>
+    <br>
+    <div id="meuElemento"></div>
+
+
+    <!--
+
+    -->
+    <script>
+                document.getElementById("meuFormulario").addEventListener("submit", function (event) {
+            event.preventDefault(); // Evita o envio tradicional do formulário
+
+            // Obtém o valor do campo de entrada
+            var valorDoCampo = document.getElementById("campoTexto").value;
+
+            // Faça o que quiser com o valor, como exibi-lo na tela ou enviá-lo para um servidor
+            console.log("Valor do campo: " + valorDoCampo);
+
+            var minhaVariavel = valorDoCampo;
+            var elemento = document.getElementById("meuElemento");
+            elemento.innerHTML = minhaVariavel;
+        });
+    </script>
+
+
+    <!--
+    <script src="js/script.js"></script>
+    -->
+
+
+</body>
+</html>

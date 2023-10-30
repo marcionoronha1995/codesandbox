@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/images/favs.png"> 
     <title>Aula 1</title>
+    <link rel="stylesheet" href="css/style.css" class="src">
 </head>
 <body>
+    <style>
+        table, th, td {
+          border:1px solid black;
+          align-items: center;
+          text-align: center;
+          align-content: center;
+        }
+    </style>
     <h1>Variáveis e estruturas condicionais</h1>
     <h2>Os nomes das variáveis</h2>
     <p title="Regras">Regras</p>
@@ -24,7 +33,7 @@
         <li>Null</li>
         <li>Undefined</li>
     </ul>
-    <p>Tipos de <b>variáveis</b></p>
+    <h2>Tipos de <b>variáveis</b></h2>
     <ul>
         <li><b>VAR</b></li>
         <ul>
@@ -48,6 +57,70 @@
 
         </ul>
     </ul>
+    <h2>Tipos de <b>operadores de comparação </b></h2>
+    <table style="width:80%">
+        <tr>
+            <th>Operador</th>
+            <th>Operação</th>
+            <th>Exemplo</th>
+        </tr>
+        <tr>
+            <th><b>==</b></th>
+            <th> igual a</th>
+            <th>“1” == 1   // true</th>
+        </tr>
+        <tr>
+            <th>===</th>
+            <th>Estritamente igual a</th>
+            <th>“1” === 1  // false</th>
+        </tr>
+        <tr>
+            <th>>, <</th>
+            <th>Maior que, menor que</th>
+            <th> 20 > 20 // false</th>
+        </tr>
+        <tr>
+            <th>>=, <=</th>
+            <th>Maior ou igual, menor ou igual</th>
+            <th> 20 <=  20 // true</th>
+        </tr>
+        <tr>
+            <th>!=, !==</th>
+            <th>Diferente de</th>
+            <th>1 != 2 // true</th>
+        </tr>
+    </table>
+    <p></p>
+    <p>o JavaScript trata os valores de string vazia, o number 0, undefined, false e null como valores falsos (falsy).</p>
+    <p>Todos os demais valores são tratados como valores verdadeiros (truthy).</p>
+    <p></p>
+    <h2>Estruturas condicionais</h2>
+    <p>Múltiplas condicionais if ... else podem ser aninhados quando necessário. Observe que não existe elseif (em uma palavra).</p>
+    <p>O correto é a instrução com espaços (else if), conforme abaixo:    </p>
+    <table style="width: 40%;">
+        <tr>
+            <th style="width: 20%; align-items: baseline;text-align: left;">
+                var idade = 20;<br>
+                if (idade === 18) {<br>
+                  console.log('Acabou de ser maior idade');<br>
+                } else if (idade > 18) {<br>
+                  console.log('É maior de idade');<br>
+                } else {<br>
+                  console.log('É menor de idade');<br>
+                }
+                </th>
+        </tr>
+    </table>
+    <h2>HTML</h2>
+    <img src="https://hermes.digitalinnovation.one/articles/cover/612bcf90-777a-452f-a501-156348543448.jpg" alt="" style="width: 25%;">
+    <p>Imagem do Olá mundo <strong>este é um texto strong</strong></p>
+    <p>Existe uma <strong>tag HTML</strong> que é o <strong>a</strong> hyperlink</p>
+    <a href="exercicio1.html">clique aqui para ir para o exercício 1</a>
+    <p>Video ZZTop</p>
+    <video src="https://youtu.be/Gg9cNGHl-bg?si=nfLdw087OLl8AOf1" style="width: 25%;">ZZtop</video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Gg9cNGHl-bg?si=xKh3J2QSziPFDuC9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>...</p>
+ 
 
 
     <script>
@@ -55,6 +128,8 @@
         console.log("variáveis, ");
         var primeiraVariavel = 'Aqui tem "   " ';
         console.log(primeiraVariavel);
+        var primeiraVariavel = 'Aqui tem novos "   " ';
+        console.log(primeiraVariavel)
         primeiraVariavel = 'Texto novo "novo mesmo"';
         console.log(primeiraVariavel);
         console.log("a variável " + primeiraVariavel + " tem " + primeiraVariavel.length + " caracteres.")
@@ -67,8 +142,22 @@
         console.log(text);
         text = " linha \n We are the so-called \"Vikings\" \f from the north.";
         console.log(text);
-        var primeiraVariavel = 'Aqui tem novos "   " ';
+        var primeiraVariavel = 'Aqui tem novos de novo " NOVO " ';
         console.log(primeiraVariavel)
+        var idade = 20;
+        if (idade >= 18) {
+        console.log('É maior de idade');
+        var idade = 20;
+        if (idade === 18) {
+        console.log('Acabou de ser maior idade');
+        } else if (idade > 18) {
+        console.log('É maior de idade');
+        } else {
+        console.log('É menor de idade');
+        }
+
+}
+
 
 
 
